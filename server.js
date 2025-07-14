@@ -138,7 +138,8 @@ io.on('connection', (socket) => {
 });
 
 const PORT = process.env.PORT || 3003;
-server.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+server.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server running on http://31.97.62.58:${PORT}`);
   console.log(`Share this link with friends to join meetings!`);
 });
+
